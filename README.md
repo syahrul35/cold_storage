@@ -79,7 +79,7 @@ lib/
 
 1. **Clone this repo**
    ```bash
-   git clone https://github.com/<your-username>/cold_storage.git
+   git clone https://github.com/syahrul35/cold_storage.git
    cd cold_storage
 
 2. **Get dependencies**
