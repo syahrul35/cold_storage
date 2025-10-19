@@ -34,6 +34,7 @@ This project simulates a simple **Cold Storage Warehouse Management System** (WM
 
 The app follows a simple layered structure inspired by clean architecture principles:
 
+```bash
 lib/
 ├─ data/
 │ ├─ models/ # Data classes (Temperature, Location, Item)
@@ -49,6 +50,8 @@ lib/
 ├─ providers/ # State management using Provider
 │
 └─ main.dart # App entry point
+
+```
 
 ## Tech Stack
 
