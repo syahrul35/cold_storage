@@ -4,13 +4,12 @@ import 'package:cold_storage/domain/repositories/inventory_repository.dart';
 import 'package:flutter/foundation.dart';
 
 class TemperatureProvider extends ChangeNotifier {
-  final _service = MockService();
+  final _service = InventoryRepository();
   List<Temperature> rooms = [];
   Timer? _timer;
 
   Future<void> fetchTemperatures() async {
-    final data = await _service.getTemperatures();
-    rooms = data.map((e) => Temperature.fromJson(e)).toList();
+    rooms = await _service.getTemperatures();
     notifyListeners();
   }
 
